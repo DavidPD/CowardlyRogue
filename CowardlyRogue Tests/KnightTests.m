@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "Knight.h"
+#import "cocos2d.h"
 
 @interface KnightTests : XCTestCase
 @property (nonatomic, strong) Knight *knight;
@@ -18,18 +19,23 @@
 - (void)setUp
 {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+	self.knight = [[Knight alloc] init];
 }
 
 - (void)tearDown
 {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+	self.knight = nil;
     [super tearDown];
 }
 
 - (void)testMove
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+	Knight *knight = self.knight;
+	
+	[knight move:ccp(1,0)];
+	XCTAssertEqual(knight.position, ccp(1,0),
+				   @"Knight position (%f,%f) should have moved to 1,0",
+				   knight.position.x, knight.position.y);
 }
 
 @end

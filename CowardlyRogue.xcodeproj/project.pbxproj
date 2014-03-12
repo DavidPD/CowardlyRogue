@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6301D16218CFA06900F11938 /* Knight.m in Sources */ = {isa = PBXBuildFile; fileRef = 63147E7F18CF8FA8002A9CA9 /* Knight.m */; };
 		63147E6C18CF8EF3002A9CA9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63147E6B18CF8EF3002A9CA9 /* XCTest.framework */; };
 		63147E6D18CF8EF3002A9CA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6363AF5D18CE738D0036F7FD /* Foundation.framework */; };
 		63147E6E18CF8EF3002A9CA9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6363AF5B18CE738D0036F7FD /* UIKit.framework */; };
@@ -1747,6 +1748,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6301D16218CFA06900F11938 /* Knight.m in Sources */,
 				63147E8218CF903A002A9CA9 /* KnightTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1999,6 +2001,11 @@
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/CowardlyRogue/Libraries/kazmath/include",
+				);
 				INFOPLIST_FILE = "CowardlyRogue Tests/CowardlyRogue Tests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = NO;
@@ -2007,6 +2014,7 @@
 					"-framework",
 					XCTest,
 					"-w",
+					"-lz",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -2045,6 +2053,11 @@
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/CowardlyRogue/Libraries/kazmath/include",
+				);
 				INFOPLIST_FILE = "CowardlyRogue Tests/CowardlyRogue Tests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = NO;
@@ -2053,6 +2066,7 @@
 					"-framework",
 					XCTest,
 					"-w",
+					"-lz",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -2064,7 +2078,7 @@
 		6363B20218CE73900036F7FD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -2086,7 +2100,7 @@
 		6363B20318CE73900036F7FD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -2197,6 +2211,7 @@
 				63147E7B18CF8EF3002A9CA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6363AF4918CE738C0036F7FD /* Build configuration list for PBXProject "CowardlyRogue" */ = {
 			isa = XCConfigurationList;

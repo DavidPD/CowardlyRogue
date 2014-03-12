@@ -7,12 +7,13 @@
 //
 
 #import "Knight.h"
+#import "cocos2d.h"
 
 @implementation Knight
 
-- (void)move:(CGPoint)direction
+- (void)move:(CGPoint)directions
 {
-	
+	self.position = ccpAdd(self.position, directions);
 }
 
 @end
