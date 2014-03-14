@@ -219,6 +219,7 @@
 		6363B1FB18CE73900036F7FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6363B1FA18CE73900036F7FD /* AppDelegate.m */; };
 		6363B1FE18CE73900036F7FD /* HelloWorldScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 6363B1FD18CE73900036F7FD /* HelloWorldScene.m */; };
 		6363B20118CE73900036F7FD /* IntroScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 6363B20018CE73900036F7FD /* IntroScene.m */; };
+		63674DF718D11DCF00E1B982 /* KnightSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 63674DF618D11DCF00E1B982 /* KnightSprite.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -675,6 +676,8 @@
 		6363B1FD18CE73900036F7FD /* HelloWorldScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HelloWorldScene.m; path = Classes/HelloWorldScene.m; sourceTree = "<group>"; };
 		6363B1FF18CE73900036F7FD /* IntroScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IntroScene.h; path = Classes/IntroScene.h; sourceTree = "<group>"; };
 		6363B20018CE73900036F7FD /* IntroScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = IntroScene.m; path = Classes/IntroScene.m; sourceTree = "<group>"; };
+		63674DF518D11DCF00E1B982 /* KnightSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KnightSprite.h; path = Classes/KnightSprite.h; sourceTree = "<group>"; };
+		63674DF618D11DCF00E1B982 /* KnightSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KnightSprite.m; path = Classes/KnightSprite.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1610,6 +1613,8 @@
 				6363B1FD18CE73900036F7FD /* HelloWorldScene.m */,
 				6363B1FF18CE73900036F7FD /* IntroScene.h */,
 				6363B20018CE73900036F7FD /* IntroScene.m */,
+				63674DF518D11DCF00E1B982 /* KnightSprite.h */,
+				63674DF618D11DCF00E1B982 /* KnightSprite.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -1846,6 +1851,7 @@
 				6363B0A818CE738E0036F7FD /* ccUtils.c in Sources */,
 				6363B01918CE738E0036F7FD /* CCPhysicsShape.m in Sources */,
 				6363B02118CE738E0036F7FD /* CCRenderTexture.m in Sources */,
+				63674DF718D11DCF00E1B982 /* KnightSprite.m in Sources */,
 				6363AFA718CE738D0036F7FD /* CCActionManager.m in Sources */,
 				6363B04B18CE738E0036F7FD /* CCSprite9Slice.m in Sources */,
 				6363B05D18CE738E0036F7FD /* CCTextureAtlas.m in Sources */,
