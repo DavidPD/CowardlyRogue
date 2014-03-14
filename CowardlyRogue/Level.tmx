@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="15" height="15" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="DungeonTiles" tilewidth="16" tileheight="16">
+  <image source="DungeonTiles.png" width="256" height="256"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="15" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjZGBgYAJiZigNwiw42Mh8ViAWBGIlMrAoECuSqVeVAntNgdiQim4WBmIRKrsZ3UxRPHpBaoVoFFaqUP9i8yMhe/G5mZg4wpU2CIW3Kh69xNjrCMROaNgZixgMu0BpVyCeggNPBeJpWNjIfAAp6iOu
+  </data>
+ </layer>
+ <layer name="Game" width="15" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2DwgY8U6v9KFVfQBwAAhlsB5w==
+  </data>
+ </layer>
+</map>

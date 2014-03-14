@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		630073ED18D3AF3D00988A3F /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 630073EC18D3AF3D00988A3F /* GameScene.m */; };
 		6301D16218CFA06900F11938 /* Knight.m in Sources */ = {isa = PBXBuildFile; fileRef = 63147E7F18CF8FA8002A9CA9 /* Knight.m */; };
 		63147E6C18CF8EF3002A9CA9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63147E6B18CF8EF3002A9CA9 /* XCTest.framework */; };
 		63147E6D18CF8EF3002A9CA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6363AF5D18CE738D0036F7FD /* Foundation.framework */; };
@@ -14,6 +15,9 @@
 		63147E7418CF8EF3002A9CA9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63147E7218CF8EF3002A9CA9 /* InfoPlist.strings */; };
 		63147E8018CF8FA8002A9CA9 /* Knight.m in Sources */ = {isa = PBXBuildFile; fileRef = 63147E7F18CF8FA8002A9CA9 /* Knight.m */; };
 		63147E8218CF903A002A9CA9 /* KnightTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63147E8118CF903A002A9CA9 /* KnightTests.m */; };
+		6343A5B918D3B1B00073A589 /* DungeonTiles.png in Resources */ = {isa = PBXBuildFile; fileRef = 6343A5B618D3B1B00073A589 /* DungeonTiles.png */; };
+		6343A5BA18D3B1B00073A589 /* Knight.png in Resources */ = {isa = PBXBuildFile; fileRef = 6343A5B718D3B1B00073A589 /* Knight.png */; };
+		6343A5BB18D3B1B00073A589 /* Level.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 6343A5B818D3B1B00073A589 /* Level.tmx */; };
 		6363AF5218CE738D0036F7FD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6363AF5118CE738D0036F7FD /* QuartzCore.framework */; };
 		6363AF5418CE738D0036F7FD /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6363AF5318CE738D0036F7FD /* OpenGLES.framework */; };
 		6363AF5618CE738D0036F7FD /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6363AF5518CE738D0036F7FD /* OpenAL.framework */; };
@@ -217,8 +221,6 @@
 		6363B1F318CE73900036F7FD /* LICENSE_Chipmunk.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6363B1F218CE73900036F7FD /* LICENSE_Chipmunk.txt */; };
 		6363B1F718CE73900036F7FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6363B1F618CE73900036F7FD /* main.m */; };
 		6363B1FB18CE73900036F7FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6363B1FA18CE73900036F7FD /* AppDelegate.m */; };
-		6363B1FE18CE73900036F7FD /* HelloWorldScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 6363B1FD18CE73900036F7FD /* HelloWorldScene.m */; };
-		6363B20118CE73900036F7FD /* IntroScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 6363B20018CE73900036F7FD /* IntroScene.m */; };
 		63674DF718D11DCF00E1B982 /* KnightSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 63674DF618D11DCF00E1B982 /* KnightSprite.m */; };
 /* End PBXBuildFile section */
 
@@ -240,6 +242,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		630073EB18D3AF3D00988A3F /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		630073EC18D3AF3D00988A3F /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
 		63147E6A18CF8EF3002A9CA9 /* CowardlyRogue Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CowardlyRogue Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63147E6B18CF8EF3002A9CA9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		63147E7118CF8EF3002A9CA9 /* CowardlyRogue Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CowardlyRogue Tests-Info.plist"; sourceTree = "<group>"; };
@@ -248,6 +252,9 @@
 		63147E7E18CF8FA8002A9CA9 /* Knight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Knight.h; path = CowardlyLogic/Knight.h; sourceTree = "<group>"; };
 		63147E7F18CF8FA8002A9CA9 /* Knight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Knight.m; path = CowardlyLogic/Knight.m; sourceTree = "<group>"; };
 		63147E8118CF903A002A9CA9 /* KnightTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KnightTests.m; sourceTree = "<group>"; };
+		6343A5B618D3B1B00073A589 /* DungeonTiles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DungeonTiles.png; sourceTree = "<group>"; };
+		6343A5B718D3B1B00073A589 /* Knight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Knight.png; sourceTree = "<group>"; };
+		6343A5B818D3B1B00073A589 /* Level.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Level.tmx; sourceTree = "<group>"; };
 		6363AF4E18CE738D0036F7FD /* CowardlyRogue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CowardlyRogue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6363AF5118CE738D0036F7FD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		6363AF5318CE738D0036F7FD /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -672,10 +679,6 @@
 		6363B1F618CE73900036F7FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Supporting Files/main.m"; sourceTree = "<group>"; };
 		6363B1F918CE73900036F7FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
 		6363B1FA18CE73900036F7FD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
-		6363B1FC18CE73900036F7FD /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
-		6363B1FD18CE73900036F7FD /* HelloWorldScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HelloWorldScene.m; path = Classes/HelloWorldScene.m; sourceTree = "<group>"; };
-		6363B1FF18CE73900036F7FD /* IntroScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IntroScene.h; path = Classes/IntroScene.h; sourceTree = "<group>"; };
-		6363B20018CE73900036F7FD /* IntroScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = IntroScene.m; path = Classes/IntroScene.m; sourceTree = "<group>"; };
 		63674DF518D11DCF00E1B982 /* KnightSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KnightSprite.h; path = Classes/KnightSprite.h; sourceTree = "<group>"; };
 		63674DF618D11DCF00E1B982 /* KnightSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KnightSprite.m; path = Classes/KnightSprite.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -791,6 +794,9 @@
 		6363AF6A18CE738D0036F7FD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6343A5B618D3B1B00073A589 /* DungeonTiles.png */,
+				6343A5B718D3B1B00073A589 /* Knight.png */,
+				6343A5B818D3B1B00073A589 /* Level.tmx */,
 				6363AF6B18CE738D0036F7FD /* Default.png */,
 				6363AF6D18CE738D0036F7FD /* Default@2x.png */,
 				6363AF6F18CE738D0036F7FD /* Default-568h@2x.png */,
@@ -1609,12 +1615,10 @@
 			children = (
 				6363B1F918CE73900036F7FD /* AppDelegate.h */,
 				6363B1FA18CE73900036F7FD /* AppDelegate.m */,
-				6363B1FC18CE73900036F7FD /* HelloWorldScene.h */,
-				6363B1FD18CE73900036F7FD /* HelloWorldScene.m */,
-				6363B1FF18CE73900036F7FD /* IntroScene.h */,
-				6363B20018CE73900036F7FD /* IntroScene.m */,
 				63674DF518D11DCF00E1B982 /* KnightSprite.h */,
 				63674DF618D11DCF00E1B982 /* KnightSprite.m */,
+				630073EB18D3AF3D00988A3F /* GameScene.h */,
+				630073EC18D3AF3D00988A3F /* GameScene.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -1719,6 +1723,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6343A5BB18D3B1B00073A589 /* Level.tmx in Resources */,
+				6343A5BA18D3B1B00073A589 /* Knight.png in Resources */,
 				6363AF6E18CE738D0036F7FD /* Default@2x.png in Resources */,
 				6363AF8118CE738D0036F7FD /* Icon-120.png in Resources */,
 				6363B18518CE738F0036F7FD /* LICENSE_CCBReader.txt in Resources */,
@@ -1740,6 +1746,7 @@
 				6363AF7F18CE738D0036F7FD /* Icon-76@2x.png in Resources */,
 				6363B1F318CE73900036F7FD /* LICENSE_Chipmunk.txt in Resources */,
 				6363AF8D18CE738D0036F7FD /* Icon-Spotlight-iOS7@2x.png in Resources */,
+				6343A5B918D3B1B00073A589 /* DungeonTiles.png in Resources */,
 				6363AF7D18CE738D0036F7FD /* Icon-76.png in Resources */,
 				6363B15318CE738F0036F7FD /* ChangeLog in Resources */,
 				6363AF9218CE738D0036F7FD /* iTunesArtwork@2x in Resources */,
@@ -1818,7 +1825,6 @@
 				6363B0B618CE738E0036F7FD /* NSThread+performBlock.m in Sources */,
 				6363B04118CE738E0036F7FD /* CCShaderCache.m in Sources */,
 				6363B17E18CE738F0036F7FD /* CCBSequenceProperty.m in Sources */,
-				6363B20118CE73900036F7FD /* IntroScene.m in Sources */,
 				6363B08518CE738E0036F7FD /* CCGLView.m in Sources */,
 				6363B04818CE738E0036F7FD /* CCSprite.m in Sources */,
 				6363AFA418CE738D0036F7FD /* CCActionInterval.m in Sources */,
@@ -1859,7 +1865,6 @@
 				6363B04418CE738E0036F7FD /* ccShaders.m in Sources */,
 				6363B15818CE738F0036F7FD /* matrix.c in Sources */,
 				6363B06A18CE738E0036F7FD /* CCTiledMapLayer.m in Sources */,
-				6363B1FE18CE73900036F7FD /* HelloWorldScene.m in Sources */,
 				6363B15E18CE738F0036F7FD /* neon_matrix_impl.c in Sources */,
 				6363AFE318CE738D0036F7FD /* CCLabelTTF.m in Sources */,
 				6363B09818CE738E0036F7FD /* NSEvent+CC.m in Sources */,
@@ -1894,6 +1899,7 @@
 				6363B17B18CE738F0036F7FD /* CCBsequence.m in Sources */,
 				6363AFDC18CE738D0036F7FD /* CCLabelAtlas.m in Sources */,
 				6363B07718CE738E0036F7FD /* cocos2d.m in Sources */,
+				630073ED18D3AF3D00988A3F /* GameScene.m in Sources */,
 				6363B0FF18CE738F0036F7FD /* ALSource.m in Sources */,
 				6363B00718CE738E0036F7FD /* CCParticleSystem.m in Sources */,
 				6363B02C18CE738E0036F7FD /* CCScene.m in Sources */,
