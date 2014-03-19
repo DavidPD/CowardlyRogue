@@ -14,8 +14,10 @@
 @interface KnightSprite : CCNode
 
 @property (nonatomic, strong) Knight *knight;
+@property (nonatomic, strong) CCTiledMap *tileMap;
 
 - (id)initWithKnight:(Knight *)knight;
+- (id)initWithKnight:(Knight *)knight tileMap:(CCTiledMap *)tileMap;
 
 - (void)update;
 

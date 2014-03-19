@@ -11,6 +11,16 @@
 
 @implementation Knight
 
+- (id)initWithPosition:(CGPoint)position
+{
+	if ((self = [super init]))
+	{
+        self.position = position;
+	}
+	
+	return self;
+}
+
 - (void)move:(CGPoint)directions
 {
 	self.position = ccpAdd(self.position, directions);

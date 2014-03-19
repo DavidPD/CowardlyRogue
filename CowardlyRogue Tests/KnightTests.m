@@ -28,12 +28,19 @@
     [super tearDown];
 }
 
+- (void)testInitialPosition
+{
+	Knight *knight = [[Knight alloc] initWithPosition: ccp(4, 13)];
+	XCTAssertTrue(CGPointEqualToPoint(knight.position, ccp(4, 13)), @"knight's position (%f,%f) is incorrect (should be 4,13)",
+				   knight.position.x, knight.position.y);
+}
+
 - (void)testMove
 {
 	Knight *knight = self.knight;
 	
 	[knight move:ccp(1,0)];
-	XCTAssertEqual(knight.position, ccp(1,0),
+	XCTAssertTrue(CGPointEqualToPoint(knight.position, ccp(1,0)),
 				   @"Knight position (%f,%f) should have moved to 1,0",
 				   knight.position.x, knight.position.y);
 }

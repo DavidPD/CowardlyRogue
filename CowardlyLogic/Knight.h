@@ -12,6 +12,9 @@
 
 @property (nonatomic)CGPoint position;
 
+- (id)initWithPosition:(CGPoint)position;
+
 - (void)move:(CGPoint)direction;
+
 
 @end
