@@ -47,7 +47,8 @@
 - (CGPoint)convertKnightTilePosition
 {
 	if (self.tileMap)
-		return ccpMult(ccp(self.knight.position.x, (self.tileMap.mapSize.height - self.knight.position.y - 1)), 16);
+//		return ccpMult(ccp(self.knight.position.x, (self.tileMap.mapSize.height - self.knight.position.y - 1)), 16);
+		return [[self.tileMap layerNamed:@"Game"] positionAt:self.knight.position];
 	else
 		return ccpMult(self.knight.position, 16);
 }
