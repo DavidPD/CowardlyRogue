@@ -15,6 +15,7 @@
 		63147E7418CF8EF3002A9CA9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63147E7218CF8EF3002A9CA9 /* InfoPlist.strings */; };
 		63147E8018CF8FA8002A9CA9 /* Knight.m in Sources */ = {isa = PBXBuildFile; fileRef = 63147E7F18CF8FA8002A9CA9 /* Knight.m */; };
 		63147E8218CF903A002A9CA9 /* KnightTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63147E8118CF903A002A9CA9 /* KnightTests.m */; };
+		632B4D6F18E0EDE9006024AB /* target.png in Resources */ = {isa = PBXBuildFile; fileRef = 632B4D6E18E0EDE9006024AB /* target.png */; };
 		6343A5B918D3B1B00073A589 /* DungeonTiles.png in Resources */ = {isa = PBXBuildFile; fileRef = 6343A5B618D3B1B00073A589 /* DungeonTiles.png */; };
 		6343A5BA18D3B1B00073A589 /* Knight.png in Resources */ = {isa = PBXBuildFile; fileRef = 6343A5B718D3B1B00073A589 /* Knight.png */; };
 		6343A5BB18D3B1B00073A589 /* Level.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 6343A5B818D3B1B00073A589 /* Level.tmx */; };
@@ -252,6 +253,7 @@
 		63147E7E18CF8FA8002A9CA9 /* Knight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Knight.h; path = CowardlyLogic/Knight.h; sourceTree = "<group>"; };
 		63147E7F18CF8FA8002A9CA9 /* Knight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Knight.m; path = CowardlyLogic/Knight.m; sourceTree = "<group>"; };
 		63147E8118CF903A002A9CA9 /* KnightTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KnightTests.m; sourceTree = "<group>"; };
+		632B4D6E18E0EDE9006024AB /* target.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = target.png; sourceTree = "<group>"; };
 		6343A5B618D3B1B00073A589 /* DungeonTiles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DungeonTiles.png; sourceTree = "<group>"; };
 		6343A5B718D3B1B00073A589 /* Knight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Knight.png; sourceTree = "<group>"; };
 		6343A5B818D3B1B00073A589 /* Level.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Level.tmx; sourceTree = "<group>"; };
@@ -794,6 +796,7 @@
 		6363AF6A18CE738D0036F7FD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				632B4D6E18E0EDE9006024AB /* target.png */,
 				6343A5B618D3B1B00073A589 /* DungeonTiles.png */,
 				6343A5B718D3B1B00073A589 /* Knight.png */,
 				6343A5B818D3B1B00073A589 /* Level.tmx */,
@@ -1735,6 +1738,7 @@
 				6363AF7518CE738D0036F7FD /* Icon.png in Resources */,
 				6363AF8318CE738D0036F7FD /* Icon-iPad-Spotlight-iOS7@2x.png in Resources */,
 				6363AF7218CE738D0036F7FD /* Default-Landscape~ipad.png in Resources */,
+				632B4D6F18E0EDE9006024AB /* target.png in Resources */,
 				6363AF8718CE738D0036F7FD /* Icon-Small.png in Resources */,
 				6363AF8518CE738D0036F7FD /* Icon-Small-50.png in Resources */,
 				6363B16E18CE738F0036F7FD /* LICENSE_Kazmath.txt in Resources */,

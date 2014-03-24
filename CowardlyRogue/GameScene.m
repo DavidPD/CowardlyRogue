@@ -29,6 +29,7 @@
 {
 	if ((self = [super init]))
 	{
+		self.targets = [NSMutableArray array];
 		self.userInteractionEnabled = TRUE;
 		
         self.tileMap = [CCTiledMap tiledMapWithFile:@"Level.tmx"];
@@ -42,9 +43,44 @@
 		[self.tileMap addChild:self.knightSprite];
 		
 		self.scale = 3.0;
+		
+		[self generateTargets];
 	}
 	
 	return self;
+}
+
+- (void)generateTargets
+{
+	CGPoint adjacents[] = {ccp(1,0), ccp(0,-1), ccp(-1,0), ccp(0,1)};
+	for (int i = 0; i < 4; i++)
+	{
+		CGPoint tile = ccpAdd(self.player.position, adjacents[i]);
+		CGPoint pos = [[self.tileMap layerNamed:@"Game"] positionAt:tile];
+		CCSprite *target = [CCSprite spriteWithImageNamed:@"target.png"];
+		target.texture.antialiased = false;
+		target.position = pos;
+		target.anchorPoint = CGPointZero;
+		target.opacity = 0;
+		[target runAction:[CCActionFadeIn actionWithDuration:0.2]];
+		[self.tileMap addChild:target];
+		[self.targets addObject:target];
+	}
+}
+
+- (void)clearTargets
+{
+	CCActionFiniteTime *remove = [CCActionSequence actions:[CCActionFadeOut actionWithDuration:0.2f], [CCActionRemove action], nil];
+	[self.targets enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+		[obj runAction:[remove copy]];
+	}];
+	[self.targets removeAllObjects];
+}
+
+- (void)resetTargets
+{
+	[self clearTargets];
+	[self generateTargets];
 }
 
 - (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event
@@ -58,6 +94,7 @@
 	{
 		[self.player move:ccpSub(tile, self.player.position)];
 		[self.knightSprite update];
+		[self resetTargets];
 	}
 }
 
