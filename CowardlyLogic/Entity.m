@@ -11,9 +11,20 @@
 
 @implementation Entity
 
-- (id)initWithPosition:(CGPoint)position
+- (id)init
 {
 	if ((self = [super init]))
+	{
+		self.health = 5;
+		self.maxHealth = 5;
+	}
+	
+	return self;
+}
+
+- (id)initWithPosition:(CGPoint)position
+{
+	if ((self = [self init]))
 	{
         self.position = position;
 	}

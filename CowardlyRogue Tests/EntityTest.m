@@ -45,5 +45,18 @@
 				  entity.position.x, entity.position.y);
 }
 
+- (void)testInitialHealth
+{
+	Entity *entity = [[Entity alloc] init];
+	
+	XCTAssertEqual(5, entity.health, @"Entity starting health expected to be 5");
+}
+
+- (void)testInitialMaxHealth
+{
+	Entity *entity = [[Entity alloc] init];
+	
+	XCTAssertEqual(5, entity.maxHealth, @"Entity starting max health expected to be 5");
+}
 
 @end
