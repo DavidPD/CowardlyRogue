@@ -16,6 +16,9 @@
 		63147E8018CF8FA8002A9CA9 /* Knight.m in Sources */ = {isa = PBXBuildFile; fileRef = 63147E7F18CF8FA8002A9CA9 /* Knight.m */; };
 		63147E8218CF903A002A9CA9 /* KnightTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63147E8118CF903A002A9CA9 /* KnightTests.m */; };
 		632B4D6F18E0EDE9006024AB /* target.png in Resources */ = {isa = PBXBuildFile; fileRef = 632B4D6E18E0EDE9006024AB /* target.png */; };
+		632B4D7618E4D5CA006024AB /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = 632B4D7518E4D5CA006024AB /* Entity.m */; };
+		632B4D7718E4D5CA006024AB /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = 632B4D7518E4D5CA006024AB /* Entity.m */; };
+		632B4D7918E4DAE8006024AB /* EntityTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 632B4D7818E4DAE8006024AB /* EntityTest.m */; };
 		6343A5B918D3B1B00073A589 /* DungeonTiles.png in Resources */ = {isa = PBXBuildFile; fileRef = 6343A5B618D3B1B00073A589 /* DungeonTiles.png */; };
 		6343A5BA18D3B1B00073A589 /* Knight.png in Resources */ = {isa = PBXBuildFile; fileRef = 6343A5B718D3B1B00073A589 /* Knight.png */; };
 		6343A5BB18D3B1B00073A589 /* Level.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 6343A5B818D3B1B00073A589 /* Level.tmx */; };
@@ -254,6 +257,9 @@
 		63147E7F18CF8FA8002A9CA9 /* Knight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Knight.m; path = CowardlyLogic/Knight.m; sourceTree = "<group>"; };
 		63147E8118CF903A002A9CA9 /* KnightTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KnightTests.m; sourceTree = "<group>"; };
 		632B4D6E18E0EDE9006024AB /* target.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = target.png; sourceTree = "<group>"; };
+		632B4D7418E4D5CA006024AB /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; name = Entity.h; path = CowardlyLogic/Entity.h; sourceTree = "<group>"; tabWidth = 4; usesTabs = 1; wrapsLines = 1; };
+		632B4D7518E4D5CA006024AB /* Entity.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; name = Entity.m; path = CowardlyLogic/Entity.m; sourceTree = "<group>"; tabWidth = 4; usesTabs = 1; wrapsLines = 1; };
+		632B4D7818E4DAE8006024AB /* EntityTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntityTest.m; sourceTree = "<group>"; };
 		6343A5B618D3B1B00073A589 /* DungeonTiles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DungeonTiles.png; sourceTree = "<group>"; };
 		6343A5B718D3B1B00073A589 /* Knight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Knight.png; sourceTree = "<group>"; };
 		6343A5B818D3B1B00073A589 /* Level.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Level.tmx; sourceTree = "<group>"; };
@@ -719,6 +725,7 @@
 		63147E6F18CF8EF3002A9CA9 /* CowardlyRogue Tests */ = {
 			isa = PBXGroup;
 			children = (
+				632B4D7818E4DAE8006024AB /* EntityTest.m */,
 				63147E8118CF903A002A9CA9 /* KnightTests.m */,
 				63147E7018CF8EF3002A9CA9 /* Supporting Files */,
 			);
@@ -738,6 +745,8 @@
 		63147E7D18CF8F02002A9CA9 /* CowardlyLogic */ = {
 			isa = PBXGroup;
 			children = (
+				632B4D7418E4D5CA006024AB /* Entity.h */,
+				632B4D7518E4D5CA006024AB /* Entity.m */,
 				63147E7E18CF8FA8002A9CA9 /* Knight.h */,
 				63147E7F18CF8FA8002A9CA9 /* Knight.m */,
 			);
@@ -1764,6 +1773,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				632B4D7918E4DAE8006024AB /* EntityTest.m in Sources */,
+				632B4D7718E4D5CA006024AB /* Entity.m in Sources */,
 				6301D16218CFA06900F11938 /* Knight.m in Sources */,
 				63147E8218CF903A002A9CA9 /* KnightTests.m in Sources */,
 			);
@@ -1773,6 +1784,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				632B4D7618E4D5CA006024AB /* Entity.m in Sources */,
 				6363B00018CE738E0036F7FD /* CCParticleBatchNode.m in Sources */,
 				63147E8018CF8FA8002A9CA9 /* Knight.m in Sources */,
 				6363B17818CE738F0036F7FD /* CCBReader.m in Sources */,

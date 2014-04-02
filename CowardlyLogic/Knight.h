@@ -8,13 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Knight : NSObject
+#import "Entity.h"
 
-@property (nonatomic)CGPoint position;
+@interface Knight : Entity
 
-- (id)initWithPosition:(CGPoint)position;
-
-- (void)move:(CGPoint)direction;
 
 
 @end
