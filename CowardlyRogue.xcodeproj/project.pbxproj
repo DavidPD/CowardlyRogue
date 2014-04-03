@@ -229,6 +229,8 @@
 		63DAD5BE18EE05CC00C1D859 /* Dwarf.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DAD5BD18EE05CC00C1D859 /* Dwarf.m */; };
 		63DAD5C018EE05E300C1D859 /* DwarfTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DAD5BF18EE05E300C1D859 /* DwarfTests.m */; };
 		63DAD5C118EE074F00C1D859 /* Dwarf.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DAD5BD18EE05CC00C1D859 /* Dwarf.m */; };
+		63DAD5C418EE0AFB00C1D859 /* DwarfSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DAD5C318EE0AFB00C1D859 /* DwarfSprite.m */; };
+		63DAD5C618EE0D5900C1D859 /* Dwarf1.png in Resources */ = {isa = PBXBuildFile; fileRef = 63DAD5C518EE0D5900C1D859 /* Dwarf1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -695,6 +697,9 @@
 		63DAD5BC18EE05CC00C1D859 /* Dwarf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dwarf.h; sourceTree = "<group>"; };
 		63DAD5BD18EE05CC00C1D859 /* Dwarf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dwarf.m; sourceTree = "<group>"; };
 		63DAD5BF18EE05E300C1D859 /* DwarfTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DwarfTests.m; sourceTree = "<group>"; };
+		63DAD5C218EE0AFB00C1D859 /* DwarfSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DwarfSprite.h; path = Classes/DwarfSprite.h; sourceTree = "<group>"; };
+		63DAD5C318EE0AFB00C1D859 /* DwarfSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DwarfSprite.m; path = Classes/DwarfSprite.m; sourceTree = "<group>"; };
+		63DAD5C518EE0D5900C1D859 /* Dwarf1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dwarf1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -816,6 +821,7 @@
 			children = (
 				632B4D6E18E0EDE9006024AB /* target.png */,
 				6343A5B618D3B1B00073A589 /* DungeonTiles.png */,
+				63DAD5C518EE0D5900C1D859 /* Dwarf1.png */,
 				6343A5B718D3B1B00073A589 /* Knight.png */,
 				6343A5B818D3B1B00073A589 /* Level.tmx */,
 				6363AF6B18CE738D0036F7FD /* Default.png */,
@@ -1640,6 +1646,8 @@
 				63674DF618D11DCF00E1B982 /* KnightSprite.m */,
 				630073EB18D3AF3D00988A3F /* GameScene.h */,
 				630073EC18D3AF3D00988A3F /* GameScene.m */,
+				63DAD5C218EE0AFB00C1D859 /* DwarfSprite.h */,
+				63DAD5C318EE0AFB00C1D859 /* DwarfSprite.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -1769,6 +1777,7 @@
 				6363B1F318CE73900036F7FD /* LICENSE_Chipmunk.txt in Resources */,
 				6363AF8D18CE738D0036F7FD /* Icon-Spotlight-iOS7@2x.png in Resources */,
 				6343A5B918D3B1B00073A589 /* DungeonTiles.png in Resources */,
+				63DAD5C618EE0D5900C1D859 /* Dwarf1.png in Resources */,
 				6363AF7D18CE738D0036F7FD /* Icon-76.png in Resources */,
 				6363B15318CE738F0036F7FD /* ChangeLog in Resources */,
 				6363AF9218CE738D0036F7FD /* iTunesArtwork@2x in Resources */,
@@ -1924,6 +1933,7 @@
 				6363B0D618CE738F0036F7FD /* OALUtilityActions.m in Sources */,
 				6363B08118CE738E0036F7FD /* CCES2Renderer.m in Sources */,
 				6363B15118CE738F0036F7FD /* aabb.c in Sources */,
+				63DAD5C418EE0AFB00C1D859 /* DwarfSprite.m in Sources */,
 				6363B17B18CE738F0036F7FD /* CCBsequence.m in Sources */,
 				6363AFDC18CE738D0036F7FD /* CCLabelAtlas.m in Sources */,
 				6363B07718CE738E0036F7FD /* cocos2d.m in Sources */,
