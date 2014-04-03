@@ -14,5 +14,6 @@
 + (CCScene *)scene;
 
 @property (nonatomic, strong) NSMutableArray *targets;
+@property (nonatomic, strong) NSMutableArray *entities;
 
 @end

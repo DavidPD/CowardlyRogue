@@ -9,6 +9,8 @@
 #import "GameScene.h"
 #import "Knight.h"
 #import "KnightSprite.h"
+#import "Dwarf.h"
+#import "DwarfSprite.h"
 
 @interface GameScene ()
 
@@ -30,6 +32,8 @@
 	if ((self = [super init]))
 	{
 		self.targets = [NSMutableArray array];
+		self.entities = [NSMutableArray array];
+		
 		self.userInteractionEnabled = TRUE;
 		
         self.tileMap = [CCTiledMap tiledMapWithFile:@"Level.tmx"];
@@ -37,10 +41,16 @@
 		[self addChild:self.tileMap];
 		
 		self.player = [[Knight alloc] initWithPosition:ccp(2, 13)];
+		[self.entities addObject:self.player];
 //		[self.player move:ccp(1, 1)];
 		self.knightSprite = [[KnightSprite alloc] initWithKnight:self.player tileMap:self.tileMap];
 		
+		Dwarf *dwarf = [[Dwarf alloc] initWithPosition:ccp(7, 13)];
+		DwarfSprite *sp = [[DwarfSprite alloc] initWithDwarf:dwarf tileMap:self.tileMap];
+		[self.entities addObject:dwarf];
+		
 		[self.tileMap addChild:self.knightSprite];
+		[self.tileMap addChild:sp];
 		
 		self.scale = 3.0;
 		
