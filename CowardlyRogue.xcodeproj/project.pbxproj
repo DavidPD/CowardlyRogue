@@ -226,6 +226,9 @@
 		6363B1F718CE73900036F7FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6363B1F618CE73900036F7FD /* main.m */; };
 		6363B1FB18CE73900036F7FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6363B1FA18CE73900036F7FD /* AppDelegate.m */; };
 		63674DF718D11DCF00E1B982 /* KnightSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 63674DF618D11DCF00E1B982 /* KnightSprite.m */; };
+		63DAD5BE18EE05CC00C1D859 /* Dwarf.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DAD5BD18EE05CC00C1D859 /* Dwarf.m */; };
+		63DAD5C018EE05E300C1D859 /* DwarfTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DAD5BF18EE05E300C1D859 /* DwarfTests.m */; };
+		63DAD5C118EE074F00C1D859 /* Dwarf.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DAD5BD18EE05CC00C1D859 /* Dwarf.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -689,6 +692,9 @@
 		6363B1FA18CE73900036F7FD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
 		63674DF518D11DCF00E1B982 /* KnightSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KnightSprite.h; path = Classes/KnightSprite.h; sourceTree = "<group>"; };
 		63674DF618D11DCF00E1B982 /* KnightSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KnightSprite.m; path = Classes/KnightSprite.m; sourceTree = "<group>"; };
+		63DAD5BC18EE05CC00C1D859 /* Dwarf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dwarf.h; sourceTree = "<group>"; };
+		63DAD5BD18EE05CC00C1D859 /* Dwarf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dwarf.m; sourceTree = "<group>"; };
+		63DAD5BF18EE05E300C1D859 /* DwarfTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DwarfTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -725,6 +731,7 @@
 		63147E6F18CF8EF3002A9CA9 /* CowardlyRogue Tests */ = {
 			isa = PBXGroup;
 			children = (
+				63DAD5BF18EE05E300C1D859 /* DwarfTests.m */,
 				632B4D7818E4DAE8006024AB /* EntityTest.m */,
 				63147E8118CF903A002A9CA9 /* KnightTests.m */,
 				63147E7018CF8EF3002A9CA9 /* Supporting Files */,
@@ -749,6 +756,8 @@
 				632B4D7518E4D5CA006024AB /* Entity.m */,
 				63147E7E18CF8FA8002A9CA9 /* Knight.h */,
 				63147E7F18CF8FA8002A9CA9 /* Knight.m */,
+				63DAD5BC18EE05CC00C1D859 /* Dwarf.h */,
+				63DAD5BD18EE05CC00C1D859 /* Dwarf.m */,
 			);
 			name = CowardlyLogic;
 			sourceTree = "<group>";
@@ -1773,6 +1782,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63DAD5C118EE074F00C1D859 /* Dwarf.m in Sources */,
+				63DAD5C018EE05E300C1D859 /* DwarfTests.m in Sources */,
 				632B4D7918E4DAE8006024AB /* EntityTest.m in Sources */,
 				632B4D7718E4D5CA006024AB /* Entity.m in Sources */,
 				6301D16218CFA06900F11938 /* Knight.m in Sources */,
@@ -1892,6 +1903,7 @@
 				6363B0E018CE738F0036F7FD /* OALAudioTracks.m in Sources */,
 				6363B0DD18CE738F0036F7FD /* OALAudioTrackNotifications.m in Sources */,
 				6363B16218CE738F0036F7FD /* quaternion.c in Sources */,
+				63DAD5BE18EE05CC00C1D859 /* Dwarf.m in Sources */,
 				6363B01618CE738E0036F7FD /* CCPhysicsNode.m in Sources */,
 				6363B0FC18CE738F0036F7FD /* ALSoundSourcePool.m in Sources */,
 				6363B00B18CE738E0036F7FD /* CCParticleSystemBase.m in Sources */,
