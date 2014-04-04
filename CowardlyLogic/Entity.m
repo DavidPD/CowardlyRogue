@@ -37,4 +37,9 @@
 	self.position = ccpAdd(self.position, directions);
 }
 
+- (void)takeDamage:(int)damage
+{
+	self.health = MAX(self.health - damage, 0);
+}
+
 @end

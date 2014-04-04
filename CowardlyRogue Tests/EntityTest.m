@@ -59,4 +59,22 @@
 	XCTAssertEqual(5, entity.maxHealth, @"Entity starting max health expected to be 5");
 }
 
+- (void)testShouldTakeDamage
+{
+	Entity *entity = [[Entity alloc] init];
+	
+	[entity takeDamage:2];
+	
+	XCTAssertEqual(3, entity.health, @"Entity Health expected to be 3 after taking 2 damage");
+}
+
+- (void)testShouldClampHealthAtZero
+{
+	Entity *entity = [[Entity alloc] init];
+	
+	[entity takeDamage:6];
+	
+	XCTAssertEqual(0, entity.health, @"Entity health expected to stop decreasing at 0");
+}
+
 @end

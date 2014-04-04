@@ -16,4 +16,6 @@
 
 - (void)move:(CGPoint)direction;
 
+- (void)takeDamage:(int)damage;
+
 @end
