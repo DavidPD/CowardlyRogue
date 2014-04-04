@@ -41,7 +41,10 @@
 
 - (void)update
 {
-	[self runAction:[CCActionMoveTo actionWithDuration:0.14 position:[self convertKnightTilePosition]]];
+	if (self.knight.alive)
+		[self runAction:[CCActionMoveTo actionWithDuration:0.14 position:[self convertKnightTilePosition]]];
+	else
+		[self runAction:[CCActionSequence actionOne:[CCActionFadeOut actionWithDuration:0.1] two:[CCActionRemove action]]];
 }
 
 - (CGPoint)convertKnightTilePosition

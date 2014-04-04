@@ -11,6 +11,14 @@
 
 @implementation Knight
 
-
+- (id)init
+{
+	if ((self = [super init]))
+	{
+        self.strength = 2;
+	}
+	
+	return self;
+}
 
 @end

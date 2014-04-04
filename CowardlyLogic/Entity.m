@@ -15,8 +15,10 @@
 {
 	if ((self = [super init]))
 	{
+		self.alive = true;
 		self.health = 5;
 		self.maxHealth = 5;
+		self.strength = 1;
 	}
 	
 	return self;
@@ -40,6 +42,18 @@
 - (void)takeDamage:(int)damage
 {
 	self.health = MAX(self.health - damage, 0);
+	
+	if (self.health == 0) [self die];
+}
+
+- (void)attackEntity:(Entity *)entity
+{
+	[entity takeDamage:self.strength];
+}
+
+- (void)die
+{
+	self.alive = false;
 }
 
 @end

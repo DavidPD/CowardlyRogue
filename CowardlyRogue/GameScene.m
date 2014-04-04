@@ -17,6 +17,7 @@
 @property (nonatomic, strong) CCTiledMap *tileMap;
 @property (nonatomic, strong) Knight *player;
 @property (nonatomic, strong) KnightSprite *knightSprite;
+@property (nonatomic, strong) NSMutableArray *entitySprites;
 
 @end
 
@@ -33,6 +34,7 @@
 	{
 		self.targets = [NSMutableArray array];
 		self.entities = [NSMutableArray array];
+		self.entitySprites = [NSMutableArray array];
 		
 		self.userInteractionEnabled = TRUE;
 		
@@ -51,6 +53,9 @@
 		
 		[self.tileMap addChild:self.knightSprite];
 		[self.tileMap addChild:sp];
+		
+		[self.entitySprites addObject:self.knightSprite];
+		[self.entitySprites addObject:sp];
 		
 		self.scale = 3.0;
 		
@@ -102,10 +107,22 @@
 	
 	if (ccpDistance(self.player.position, tile) <= 1.0)
 	{
-		[self.player move:ccpSub(tile, self.player.position)];
-		[self.knightSprite update];
-		[self resetTargets];
+		NSPredicate *p = [NSPredicate predicateWithBlock:^BOOL(Entity *obj, NSDictionary *bindings)
+						  { return CGPointEqualToPoint([obj position], tile); }];
+		
+		NSArray *hits = [self.entities filteredArrayUsingPredicate:p];
+		if (hits.count > 0)
+		{
+			[self.player move:ccpSub(tile, self.player.position)];
+			[self resetTargets];
+		}
+		else
+		{
+			[self.player attackEntity:hits[0]];
+		}
 	}
+	
+	[self.entitySprites makeObjectsPerformSelector:@selector(update)];
 }
 
 @end

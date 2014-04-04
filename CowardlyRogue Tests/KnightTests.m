@@ -35,6 +35,13 @@
 				   knight.position.x, knight.position.y);
 }
 
+- (void)testInitialStrength
+{
+	Knight *knight = [[Knight alloc] init];
+	
+	XCTAssertEqual(2, knight.strength, @"Knight expected to start with 2 strength, had %d instead", knight.strength);
+}
+
 - (void)testMove
 {
 	Knight *knight = self.knight;
