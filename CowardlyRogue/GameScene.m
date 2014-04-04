@@ -111,7 +111,7 @@
 						  { return CGPointEqualToPoint([obj position], tile); }];
 		
 		NSArray *hits = [self.entities filteredArrayUsingPredicate:p];
-		if (hits.count > 0)
+		if (hits.count == 0)
 		{
 			[self.player move:ccpSub(tile, self.player.position)];
 			[self resetTargets];

@@ -41,7 +41,10 @@
 
 - (void)update
 {
-	[self runAction:[CCActionMoveTo actionWithDuration:0.14 position:[self convertDwarfTilePosition]]];
+	if (self.dwarf.alive)
+		[self runAction:[CCActionMoveTo actionWithDuration:0.14 position:[self convertDwarfTilePosition]]];
+	else
+		[self runAction:[CCActionSequence actionOne:[CCActionFadeOut actionWithDuration:0.1] two:[CCActionRemove action]]];
 }
 
 - (CGPoint)convertDwarfTilePosition
