@@ -19,6 +19,7 @@
 		632B4D7618E4D5CA006024AB /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = 632B4D7518E4D5CA006024AB /* Entity.m */; };
 		632B4D7718E4D5CA006024AB /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = 632B4D7518E4D5CA006024AB /* Entity.m */; };
 		632B4D7918E4DAE8006024AB /* EntityTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 632B4D7818E4DAE8006024AB /* EntityTest.m */; };
+		634214DC18F9E0880052D4F1 /* EntityAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 634214DB18F9E0880052D4F1 /* EntityAction.m */; };
 		6343A5B918D3B1B00073A589 /* DungeonTiles.png in Resources */ = {isa = PBXBuildFile; fileRef = 6343A5B618D3B1B00073A589 /* DungeonTiles.png */; };
 		6343A5BA18D3B1B00073A589 /* Knight.png in Resources */ = {isa = PBXBuildFile; fileRef = 6343A5B718D3B1B00073A589 /* Knight.png */; };
 		6343A5BB18D3B1B00073A589 /* Level.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 6343A5B818D3B1B00073A589 /* Level.tmx */; };
@@ -226,6 +227,7 @@
 		6363B1F718CE73900036F7FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6363B1F618CE73900036F7FD /* main.m */; };
 		6363B1FB18CE73900036F7FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6363B1FA18CE73900036F7FD /* AppDelegate.m */; };
 		63674DF718D11DCF00E1B982 /* KnightSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 63674DF618D11DCF00E1B982 /* KnightSprite.m */; };
+		6397D11C18FF992E00271C64 /* EntityAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 634214DB18F9E0880052D4F1 /* EntityAction.m */; };
 		63DAD5BE18EE05CC00C1D859 /* Dwarf.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DAD5BD18EE05CC00C1D859 /* Dwarf.m */; };
 		63DAD5C018EE05E300C1D859 /* DwarfTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DAD5BF18EE05E300C1D859 /* DwarfTests.m */; };
 		63DAD5C118EE074F00C1D859 /* Dwarf.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DAD5BD18EE05CC00C1D859 /* Dwarf.m */; };
@@ -265,6 +267,8 @@
 		632B4D7418E4D5CA006024AB /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; name = Entity.h; path = CowardlyLogic/Entity.h; sourceTree = "<group>"; tabWidth = 4; usesTabs = 1; wrapsLines = 1; };
 		632B4D7518E4D5CA006024AB /* Entity.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; name = Entity.m; path = CowardlyLogic/Entity.m; sourceTree = "<group>"; tabWidth = 4; usesTabs = 1; wrapsLines = 1; };
 		632B4D7818E4DAE8006024AB /* EntityTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntityTest.m; sourceTree = "<group>"; };
+		634214DA18F9E0880052D4F1 /* EntityAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntityAction.h; sourceTree = "<group>"; };
+		634214DB18F9E0880052D4F1 /* EntityAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntityAction.m; sourceTree = "<group>"; };
 		6343A5B618D3B1B00073A589 /* DungeonTiles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DungeonTiles.png; sourceTree = "<group>"; };
 		6343A5B718D3B1B00073A589 /* Knight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Knight.png; sourceTree = "<group>"; };
 		6343A5B818D3B1B00073A589 /* Level.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Level.tmx; sourceTree = "<group>"; };
@@ -763,6 +767,8 @@
 				63147E7F18CF8FA8002A9CA9 /* Knight.m */,
 				63DAD5BC18EE05CC00C1D859 /* Dwarf.h */,
 				63DAD5BD18EE05CC00C1D859 /* Dwarf.m */,
+				634214DA18F9E0880052D4F1 /* EntityAction.h */,
+				634214DB18F9E0880052D4F1 /* EntityAction.m */,
 			);
 			name = CowardlyLogic;
 			sourceTree = "<group>";
@@ -1794,6 +1800,7 @@
 				63DAD5C118EE074F00C1D859 /* Dwarf.m in Sources */,
 				63DAD5C018EE05E300C1D859 /* DwarfTests.m in Sources */,
 				632B4D7918E4DAE8006024AB /* EntityTest.m in Sources */,
+				6397D11C18FF992E00271C64 /* EntityAction.m in Sources */,
 				632B4D7718E4D5CA006024AB /* Entity.m in Sources */,
 				6301D16218CFA06900F11938 /* Knight.m in Sources */,
 				63147E8218CF903A002A9CA9 /* KnightTests.m in Sources */,
@@ -1857,6 +1864,7 @@
 				6363B06618CE738E0036F7FD /* CCTiledMap.m in Sources */,
 				6363B12B18CE738F0036F7FD /* CCControl.m in Sources */,
 				6363B0AD18CE738E0036F7FD /* CCVertex.m in Sources */,
+				634214DC18F9E0880052D4F1 /* EntityAction.m in Sources */,
 				6363B0E918CE738F0036F7FD /* ALBuffer.m in Sources */,
 				6363B0B618CE738E0036F7FD /* NSThread+performBlock.m in Sources */,
 				6363B04118CE738E0036F7FD /* CCShaderCache.m in Sources */,
@@ -2146,7 +2154,6 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
@@ -2176,7 +2183,6 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;

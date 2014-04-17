@@ -6,11 +6,17 @@
 //
 //
 
+#import <Foundation/Foundation.h>
+
+@class Entity;
+@class EntityAction;
+
 @interface Entity : NSObject
 
 @property (nonatomic)CGPoint position;
 @property (nonatomic)int health;
 @property (nonatomic)int maxHealth;
+@property (nonatomic)EntityAction *prevAction;
 
 @property (nonatomic)BOOL alive;
 

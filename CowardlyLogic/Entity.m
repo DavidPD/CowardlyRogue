@@ -8,6 +8,7 @@
 
 #import "Entity.h"
 #import "cocos2d.h"
+#import "EntityAction.h"
 
 @implementation Entity
 
@@ -36,7 +37,11 @@
 
 - (void)move:(CGPoint)directions
 {
-	self.position = ccpAdd(self.position, directions);
+	CGPoint pos = self.position;
+	self.position = ccpAdd(pos, directions);
+	
+	self.prevAction = [[EntityAction alloc] initWithStartPosition:pos targetPosition:self.position];
+	self.prevAction.actionType = kEntityActionTypeMove;
 }
 
 - (void)takeDamage:(int)damage
@@ -49,6 +54,8 @@
 - (void)attackEntity:(Entity *)entity
 {
 	[entity takeDamage:self.strength];
+	
+	self.prevAction = [[EntityAction alloc] initWithActionType:kEntityActionTypeAttack startPosition:self.position targetPosition:entity.position target:entity];
 }
 
 - (void)die

@@ -9,12 +9,11 @@
 #import <XCTest/XCTest.h>
 #import "cocos2d.h"
 #import "Entity.h"
-
-#define initEntity Entity *entity = [[Entity alloc] init];
-#define initTarget Entity *target = [[Entity alloc] init];
+#import "EntityAction.h"
 
 @interface EntityTest : XCTestCase
-
+@property (nonatomic, strong)Entity *entity;
+@property (nonatomic, strong)Entity *target;
 @end
 
 @implementation EntityTest
@@ -22,6 +21,8 @@
 - (void)setUp
 {
     [super setUp];
+	self.entity = [[Entity alloc] init];
+	self.target = [[Entity alloc] init];
     // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
@@ -31,20 +32,13 @@
     [super tearDown];
 }
 
+#pragma mark -
+#pragma mark Initialization Tests
+
 - (void)testInitialPosition
 {
 	Entity *entity = [[Entity alloc] initWithPosition: ccp(4, 13)];
 	XCTAssertTrue(CGPointEqualToPoint(entity.position, ccp(4, 13)), @"Entity's position (%f,%f) is incorrect (should be 4,13)",
-				  entity.position.x, entity.position.y);
-}
-
-- (void)testMove
-{
-	Entity *entity = [[Entity alloc] init];
-	
-	[entity move:ccp(1,0)];
-	XCTAssertTrue(CGPointEqualToPoint(entity.position, ccp(1,0)),
-				  @"Entity position (%f,%f) should have moved to 1,0",
 				  entity.position.x, entity.position.y);
 }
 
@@ -76,6 +70,19 @@
 	XCTAssertTrue(entity.alive, @"Entity expected to be alive initially");
 }
 
+#pragma mark -
+#pragma mark State Modification Tests
+
+- (void)testMove
+{
+	Entity *entity = [[Entity alloc] init];
+	
+	[entity move:ccp(1,0)];
+	XCTAssertTrue(CGPointEqualToPoint(entity.position, ccp(1,0)),
+				  @"Entity position (%f,%f) should have moved to 1,0",
+				  entity.position.x, entity.position.y);
+}
+
 - (void)testShouldTakeDamage
 {
 	Entity *entity = [[Entity alloc] init];
@@ -96,24 +103,37 @@
 
 - (void)testAttackShouldDealDamage
 {
-	initEntity
-	initTarget
+	[self.entity attackEntity:self.target];
 	
-	[entity attackEntity:target];
-	
-	XCTAssertEqual(4, target.health, @"Attack expected to deal 1 damage to target (%d health), leaving it with 4 health", target.health);
+	XCTAssertEqual(4, self.target.health, @"Attack expected to deal 1 damage to target (%d health), leaving it with 4 health", self.target.health);
 }
 
 - (void)testFatalAttackShouldKillTarget
 {
-	initEntity
-	initTarget
+	self.entity.strength = 1000;
 	
-	entity.strength = 1000;
+	[self.entity attackEntity:self.target];
 	
-	[entity attackEntity:target];
+	XCTAssertTrue(!self.target.alive, @"target should have died from that blow");
+}
+
+- (void)testAttackShouldSetPreviousActionTarget
+{
+	[self.entity attackEntity:self.target];
 	
-	XCTAssertTrue(!target.alive, @"target should have died from that blow");
+	XCTAssertTrue(self.entity.prevAction.target == self.target, @"Entity's previous action expected to contain 'target' as the target");
+}
+
+- (void)testAttackShouldSetPreviousActionType
+{
+	[self.entity attackEntity:self.target];
+	
+	XCTAssertTrue(self.entity.prevAction.actionType == kEntityActionTypeAttack, @"Entity's previous action expected to be an attack");
+}
+
+- (void)testMoveShouldSetPrevActionPosition
+{
+
 }
 
 @end
